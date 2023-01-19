@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pict img{
+    width: 100%;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+}
+
+/* ---------------------------- contenu principal ------------------ */
+
+.contenu{
+	display: flex;
+	flex-direction: column;
+}
+
+/* --------------------------- page 1 ------------------------------ */
+
+.titre h1, .p2 h1{
+	font-size: clamp(20px, 9vw, 49px);
+	color: pink;
+}
+
+.main img{
+	margin-top: 30px;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #522539;
+	flex: 1 0 auto;
+	overflow: hidden;
+}
+
+
+.formu{
+	width: 75%;
+	background-color: white;
+	padding: 25px;
+	border-radius: 15px;
+	text-align: left;
+	margin-top: 20px;
+	border: 5px solid pink ;
+	box-shadow: 0 0 0.4em pink;
+}
+
+.formu input{
+	border: none;
+	outline-style: none;
+}
+
+
+.formu select{
+	padding: 5px;
+	margin: 10px;
+	border: none;
+	color: pink;
+	outline-style: none;
+}
+
+
+.saisis{ 
+	border-bottom: 2px solid pink;
+	margin-bottom: 15px;
+}
+
+.violet{
+	border-color: #522539;
+}
+
+.formGroupe .buttonSub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid pink;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, pink, lightpink);
+    background-size: 200%;
+    color: pink;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formGroupe .buttonSub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+
+
+ .formGroupe:focus-within label,
+ .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+}
+
+ .formGroupe:focus-within input,
+ .formGroupe.animation input {
+}   
+
+.formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formGroupe{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ------------------------------------- Page 2 ----------------------------- */
+
+
+.p2{
+	height: 100vh;
+	background-color: pink;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.p2 h1{
+	color: #522539;
+}
+ 
+
+ .table{
+ 	width: 90%;
+ 	background-color: white;
+ 	height: 90vh;
+ 	overflow-y: auto;
+ 	border-radius: 15px;
+	border: 5px solid #522539;
+	box-shadow: 0 0 0.4em #522539;
+	padding: 20px;
+ }
+
+
+table{
+	color: #522539;
+	width: 100%;
+}
+
+thead th{
+	padding: 20px;
+	justify-content: space-around;
+	border-bottom: 4px solid #522539;
+}
+
+
+.nouveau{
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid #522539;
+}
+
+
+.nouveau td{
+	text-align: right;
+	margin: 30px;
+
+
+}
+
+.no{
+	color: red;
+	font-size: 13px;
+}
+
+.yes{
+	color:  green;
+	font-size: 13px;
+}
+
+.image{
+	justify-content: flex-end;
+	display: flex;
+}
+
+.image img{
+	width: 70%;
+}
+		
+
+
+/* ---------- Responsive ----------- */
+
+@media (max-width: 1080px){
+	.main{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1018px){
+
+	.image img{
+		display: none;
+	}
+
+	.menu{
+		justify-content: center;
+	}
+
+	.test{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 605px){
+	.test h1{
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 475px){
+	.test h1{
+		font-size: 30px;
+	}
+}
+
+
+

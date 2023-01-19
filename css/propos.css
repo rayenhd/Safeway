@@ -1,0 +1,127 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #101081;
+}
+
+
+/* ------------- initialisation des pages --------------- */
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.p1, .p2, .p3, .p4, .p5{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.p1, .p3, .p5{
+	height: 100vh;
+	color: #f3e5b3;
+
+}
+
+/* ------------- texte responsives -------- */
+.p1 h1, .p2 h1, .p3 h1, .p4 h1, .p5 h1 {
+	font-size: clamp(10px, 7vw, 100px);
+}
+
+.texte{
+	display: flex;
+	flex-direction: column;
+}
+
+.p2, .p3, .p4, .p5{
+	height: 100vh;
+}
+
+/* ------- initialisation des photos -------- */
+ .photo{
+ 	position: sticky;
+
+	margin-left: 10px;
+ 	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+ }
+
+.p2 .photo,  .p4 .photo{
+
+	border: 7px solid #101081;
+	background-image: url(../images/mohamed.png);
+	background-position: top;	
+}
+
+.p1 .photo, .p3 .photo, .p5 .photo{
+	border: 7px solid #f3e5b3;
+	background-image: url(../images/resto.jpg);
+	background-position: top;
+
+}
+
+.p3 .photo{
+	border: 7px solid #f3e5b3;
+	background-image: url(../images/youssef.png);
+	background-position: center;
+
+
+}
+
+
+/* --------- disposition du contenu --------- */
+.info{
+
+	transition: all 0.5s;
+	font-size: clamp(10px, 9vw, 30px);
+	list-style: none;
+	text-align: center;
+}
+
+
+.p2, .p4 {
+	color: #101081;
+	background-color: #f3e5b3;
+}
+
+/* -------------------------------- Responsive ----------------------------- */ 
+
+@media (max-width: 790px){
+	.info{
+		display: none;
+	}
+
+	.photo{
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 690px){
+	.info{
+		display: none;
+	}
+
+	.photo{
+		width: 200px;
+		height: 200px;
+	}
+
+	.p2 .photo{
+
+		background-position: top;	
+	}
+
+	.p1 .photo{
+		background-image: url(../images/rayenlittle.png);
+		background-position: top right;
+
+	}
+}
+
+
+
+

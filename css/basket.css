@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.infos{
+    padding: 10px;
+    width: 95%;
+    height: 400px;
+}
+
+.content{
+    width: 25%;
+}
+
+.quant button{
+    background-color: transparent;
+    border: none;
+}
+
+.all{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bask{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    border-bottom: 1px solid rgb(190, 186, 186);
+}
+
+.subtot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fees{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalprice{
+    border-top: 1px solid lightgray;
+    display: block;
+}
+
+
+.pict{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    padding: 0 0 16px 0;
+    margin-right: 20px;
+}
+
+.pict img{
+    width: 100%;
+    height: 100%;
+}
+
+.contente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.quant{
+    display: flex;
+}
+
+#quant{
+    border: none;
+    background-color: transparent;
+}
+
+.name_art{
+    text-decoration: none;
+    color: black;
+}
+
+.contain1{
+    height: 90%;
+    margin-top: 180px;
+}
+
+.drop{
+    display: flex;
+    align-items:  flex-end;
+}
+
+.qte{
+    display: flex;
+    justify-content: space-around;
+}
+
+.qte h4{
+    margin-right: 5px;
+}
+
+.totalprice{
+    padding-top: 5px;
+}
+
+
+/* -------------- button ----------------- */
+    /* only animate if the device supports hover */
+@media (hover: hover) {
+#creditcard {
+/*  set start position */
+transform: translateY(110px);
+transition: transform 0.1s ease-in-out;
+/*  set transition for mouse enter & exit */
+}
+
+#money {
+/*  set start position */
+transform: translateY(180px);
+transition: transform 0.1s ease-in-out;
+/*  set transition for mouse enter & exit */
+}
+
+button:hover #creditcard {
+transform: translateY(0px);
+transition: transform 0.2s ease-in-out;
+/*  overide transition for mouse enter */
+}
+
+button:hover #money {
+transform: translateY(0px);
+transition: transform 0.3s ease-in-out;
+/*  overide transition for mouse enter */
+}
+}
+
+@keyframes bounce {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-0.25rem);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+.button:hover .button__text span {
+transform: translateY(-0.25rem);
+transition: transform .2s ease-in-out;
+}
+
+/* styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+
+.button {
+border: none;
+outline: none;
+background-color: purple;
+padding: 1rem 80px 1rem 2rem;
+position: relative;
+border-radius: 8px;
+letter-spacing: 0.7px;
+background-color: #5086bd;
+margin-left:20%;
+color: #fff;
+font-size: 21px;
+font-family: "Lato", sans-serif;
+cursor: pointer;
+box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}
+
+.button:active {
+transform: translateY(1px);
+}
+
+.button__svg {
+position: absolute;
+overflow: visible;
+bottom: 6px;
+right: 0.2rem;
+height: 140%;
+}
+
+.showtot{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1156px) {
+    .t{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 840px) {
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content{
+        width: 80%;
+    }
+
+    .all{
+        width: 80%;
+    }
+    .t{
+        display: inline;
+    }
+    
+}
+
+.subm{
+    background-color: transparent;
+    border: none;
+}
+
+.subm:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+}

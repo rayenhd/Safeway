@@ -1,0 +1,75 @@
+
+.tete {
+	margin: 0;
+	width: 100%; 
+	position: fixed;
+	z-index: 25;
+	top: 0%;
+	background: #303030;
+	height: 80px;
+}
+
+#profil{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	margin-top: 10px;
+}
+
+#cpt{
+	position: relative;
+	top: 0%;
+	margin-bottom: 10px;
+}  
+
+nav{
+	background-color: transparent;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+nav ul li {
+	
+	font-size: large;
+	list-style: none;
+}
+
+.link{
+	margin-top:  25px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #F1D5A5;
+}
+
+nav ul li img{
+	border-radius: 50%;
+}
+
+.subfond{
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+nav ul li a:hover{
+	transition: 0.3s;
+	font-size: 110%;
+}
+
+.slide1{
+	width: 100vw;
+	height: 100vh;
+	background: black;
+}
+
+.slide1 img{
+	position: center;
+	opacity: 0.8;
+}
+

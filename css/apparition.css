@@ -1,0 +1,13 @@
+/* -------------- Animations d'appariton -------------*/
+
+.reveal, .reveal1, .reveal2, .reveal3, .reveal4{
+	opacity: 0;
+	transform: translateY(-30px);
+}
+
+.visible{
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 5s;
+}
+
